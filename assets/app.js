@@ -71,6 +71,9 @@
     $("#logos").innerHTML = CFG.logos.map((l) => `<img src="${esc(l.src)}" alt="${esc(l.alt)}" title="${esc(l.alt)}">`).join("");
     $("#title").textContent = CFG.title;
     $("#subtitle").textContent = CFG.subtitle;
+    $("#organiser").textContent = CFG.organiser || "";
+    $("#footOrg").textContent = CFG.organiser || "";
+    $("#copyright").textContent = CFG.copyright || "";
     $("#intro").innerHTML = CFG.intro.map((p) => `<p>${esc(p)}</p>`).join("");
     const facts = [];
     if (CFG.duration) facts.push(`<div><span>Durée estimée</span><strong>${esc(CFG.duration)}</strong></div>`);
