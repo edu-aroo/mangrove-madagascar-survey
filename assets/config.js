@@ -4,7 +4,7 @@
 window.SURVEY_CONFIG = {
   // 1) Paste here the Web App URL obtained after deploying apps-script/Code.gs
   //    Leave empty ("") to run in TEST mode (nothing is sent; answers can be downloaded as JSON).
-  SCRIPT_URL: "",
+  SCRIPT_URL: "https://script.google.com/macros/s/AKfycbypFib_ds68xOpv1wyrpD3mqnk_n6DvHtpyUKmkCml-b00oMvPPqEElb_mMz32vjZBk/exec",
 
   // 2) Texts shown on the landing page
   title: "Questionnaire sur les méthodes de suivi écologique et de restauration des mangroves à Madagascar",
@@ -17,8 +17,8 @@ window.SURVEY_CONFIG = {
     "Une partie du questionnaire se répète pour chaque méthode que vous utilisez. Vos réponses sont enregistrées automatiquement sur cet appareil : vous pouvez fermer la page et reprendre plus tard."
   ],
   duration: "30 à 45 minutes",              // [À VÉRIFIER]
-  deadline: "",                             // e.g. "15 décembre 2026" — leave "" to hide
-  contact: { name: "", email: "" },         // e.g. { name: "Fidèle …", email: "…@…" } — leave "" to hide
+  deadline: "15 Novembre 2026",                             // e.g. "15 décembre 2026" — leave "" to hide
+  contact: { name: "Fidèle Rakotonjanahary", email: "fidele.rakotonjanahary886@gmail.com" },         // e.g. { name: "Fidèle …", email: "…@…" } — leave "" to hide
 
   // 3) Partner logos (files in the logos/ folder)
   logos: [
