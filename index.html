@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquête mangroves Madagascar</title>
+  <meta name="description" content="Questionnaire sur les méthodes de suivi écologique et de restauration des mangroves à Madagascar.">
+  <link rel="icon" href="logos/ihsm.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div id="testBanner" class="testbanner" hidden>Mode test : aucune réponse n’est envoyée (SCRIPT_URL non configuré dans assets/config.js).</div>
+
+  <header class="top">
+    <div class="wrap logos" id="logos"></div>
+  </header>
+
+  <section class="hero">
+    <svg class="roots" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 120 Q150 90 300 118 T600 112 T900 120 T1200 108 V160 H0Z" fill="rgba(255,255,255,.06)"/>
+      <path d="M0 140 Q200 115 400 138 T800 132 T1200 136 V160 H0Z" fill="rgba(255,255,255,.08)"/>
+    </svg>
+    <div class="wrap hero-in">
+      <p class="eyebrow">Enquête auprès des acteurs</p>
+      <h1 id="title"></h1>
+      <p class="subtitle" id="subtitle"></p>
+      <div class="intro" id="intro"></div>
+      <div class="facts" id="facts"></div>
+      <button type="button" class="btn btn-light" id="startBtn">Commencer le questionnaire ↓</button>
+    </div>
+  </section>
+
+  <main class="wrap main" id="app">
+    <div id="resume" class="resume" hidden>
+      <span>Vos réponses précédentes ont été restaurées depuis cet appareil. Les fichiers joints doivent être ajoutés à nouveau.</span>
+      <button type="button" class="link" id="resetBtn">Recommencer à zéro</button>
+    </div>
+
+    <div class="layout">
+      <aside class="side">
+        <div class="progress"><div class="bar" id="progressBar"></div></div>
+        <p class="ptxt" id="progressTxt"></p>
+        <ol class="stepper" id="stepper"></ol>
+        <p class="saved" id="saved"></p>
+      </aside>
+
+      <section class="card" id="formCard">
+        <form id="form" novalidate>
+          <h2 id="stepTitle"></h2>
+          <div id="stepBody"></div>
+
+          <div id="consentBox" class="consent" hidden>
+            <label><input type="checkbox" id="consent"> <span id="consentText"></span><span class="req">*</span></label>
+          </div>
+
+          <div id="errorBox" class="errorbox" hidden>
+            <strong>L’envoi a échoué.</strong> Vérifiez votre connexion puis réessayez. Vos réponses restent enregistrées sur cet appareil.
+            <small id="errorDetail"></small>
+            <div class="row">
+              <button type="button" class="btn" id="retryBtn">Réessayer</button>
+              <button type="button" class="btn btn-ghost" id="dlBtn">Télécharger une copie de mes réponses</button>
+            </div>
+          </div>
+
+          <nav class="nav">
+            <button type="button" class="btn btn-ghost" id="prevBtn">← Précédent</button>
+            <span class="spacer"></span>
+            <button type="button" class="btn" id="nextBtn">Suivant →</button>
+            <button type="button" class="btn btn-accent" id="submitBtn" hidden>Envoyer mes réponses</button>
+          </nav>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <section class="wrap thanks" id="thanks" hidden>
+    <div class="card center">
+      <div class="check">✓</div>
+      <h2>Merci pour votre participation</h2>
+      <p>Vos réponses ont bien été enregistrées.</p>
+      <p class="ref">Référence : <strong id="refId"></strong></p>
+      <div id="testNote" hidden>
+        <p class="note">Mode test : rien n’a été envoyé.</p>
+        <button type="button" class="btn btn-ghost" id="dlTest">Télécharger les réponses (JSON)</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">Les champs marqués <span class="req">*</span> sont obligatoires. Les coordonnées personnelles ne seront pas publiées.</div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden><div class="spinner"></div><p id="ovMsg"></p></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/questions.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
