@@ -1,3 +1,8 @@
+# Link to survey
+https://edu-aroo.github.io/mangrove-madagascar-survey/
+# Link to report
+https://edu-aroo.github.io/mangrove-madagascar-survey/rapport
+
 # Mangrove survey – web form → Google Sheets
 
 Static web form (GitHub/GitLab Pages) that sends answers to a Google Sheet through a Google Apps Script, with uploaded photos/PDFs saved in Google Drive.
