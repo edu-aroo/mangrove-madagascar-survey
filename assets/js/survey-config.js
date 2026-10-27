@@ -33,7 +33,7 @@ const SURVEY = {
   "contactEmail": "fidele.rakotonjanahary886@gmail.com",
   "deadline": "15 Novembre 2026",
   "estimatedTime": "30 à 50 min",
-  "appsScriptUrl": "https://script.google.com/macros/s/AKfycbypFib_ds68xOpv1wyrpD3mqnk_n6DvHtpyUKmkCml-b00oMvPPqEElb_mMz32vjZBk/exec",
+  "appsScriptUrl": "https://script.google.com/macros/s/AKfycbwAb2fbzkMVWaubWFLjCwFvN8rmtlHN28crnc14KmmBa6QRoPcFhuo6aYmDK27p9RlRfg/exec",
   "logos": [
     {
       "src": "assets/img/logos/ihsm.png",
