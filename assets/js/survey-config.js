@@ -32,7 +32,7 @@ const SURVEY = {
   "contactName": "Fidèle Rakotonjanahary",
   "contactEmail": "fidele.rakotonjanahary886@gmail.com",
   "deadline": "15 Novembre 2026",
-  "estimatedTime": "30 à 50 min",
+  "estimatedTime": "45 à 60 min",
   "appsScriptUrl": "https://script.google.com/macros/s/AKfycbwAb2fbzkMVWaubWFLjCwFvN8rmtlHN28crnc14KmmBa6QRoPcFhuo6aYmDK27p9RlRfg/exec",
   "logos": [
     {
